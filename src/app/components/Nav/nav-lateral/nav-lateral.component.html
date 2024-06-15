@@ -1,0 +1,19 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav mode="side" opened class="sidenav">
+      <div class="logo-container">
+        <img src="/assets/images/logo.png" alt="Ahorra+" class="logo">
+      </div>
+      <mat-nav-list>
+        <a [routerLink]="'inicio'" class="txt">Inicio</a>
+        <a routerLink="perfil" class="txt">Perfil</a>
+        <a href="#" class="txt">Transacción</a>
+        <a href="#" class="txt">Reservas</a>
+        <a href="#" class="txt">Tarjeta</a>
+        <a href="#" class="txt">Reportes</a>
+        <a href="#" class="txt">Configuración</a>
+      </mat-nav-list>
+      <button mat-raised-button color="warn" class="logout-button">Cerrar sesión</button>
+    </mat-sidenav>
+    <mat-sidenav-content>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

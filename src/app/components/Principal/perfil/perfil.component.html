@@ -1,0 +1,81 @@
+<div class="container">
+    <div class="imagen">
+        <h1>Mi perfil</h1>
+    </div>
+    
+    <form action="">
+        <mat-card class="example-card">
+            <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Perfil logo {{userName}}">
+            <h2>{{userName}}</h2>
+        </mat-card>
+
+       <div class="data">
+            <div class="col-1">
+                <div class="inputs">
+                    <h3>Nombres</h3>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Nombres</mat-label>
+                        <input type="text" matInput [formControl]="nombresFormControl" placeholder="Ex. Luis Spadaro">
+                        @if (nombresFormControl.hasError('required')) {
+                          <mat-error>Porfavor ingresa un nombre</mat-error>
+                        }
+                    </mat-form-field>
+                </div>
+                <div class="inputs">
+                    <h3>DNI</h3>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>DNI</mat-label>
+                        <input type="number" matInput [formControl]="DNIFormControl" placeholder="Ex. 82593756">
+                        @if (DNIFormControl.hasError('required') || DNIFormControl.errors?.['pattern']) {
+                          <mat-error>Porfavor ingresa un DNI VALIDO</mat-error>
+                        }
+                    </mat-form-field>
+                </div>
+                <div class="inputs">
+                    <h3>Direccion</h3>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Direccion</mat-label>
+                        <input type="text" matInput [formControl]="DireccionFormControl" placeholder="Ex. Luis Spadaro">
+                        @if (DireccionFormControl.hasError('required')) {
+                          <mat-error>Porfavor ingresa una direccion</mat-error>
+                        }
+                    </mat-form-field>
+                </div>
+
+            </div>
+            <div class="col-1">
+                <div class="inputs">
+                    <h3>Apellidos</h3>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Apellidos</mat-label>
+                        <input type="text" matInput [formControl]="apellidosFormControl" placeholder="Ex. miranda molina">
+                        @if (apellidosFormControl.hasError('required')) {
+                          <mat-error>Porfavor ingresa un nombre</mat-error>
+                        }
+                    </mat-form-field>
+                </div>
+                <div class="inputs">
+                    <h3>Correo electronico</h3>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Correo</mat-label>
+                        <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. abd@gmail.com">
+                        @if (emailFormControl.hasError('required') || DNIFormControl.errors?.['pattern']) {
+                          <mat-error>Porfavor ingresa un DNI VALIDO</mat-error>
+                        }
+                    </mat-form-field>
+                </div>
+                <div class="inputs">
+                    <h3>Telefono</h3>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Telefono</mat-label>
+                        <input type="text" matInput [formControl]="telefonoFormControl" placeholder="Ex. 987654321">
+                        @if (telefonoFormControl.hasError('required')) {
+                          <mat-error>Porfavor ingresa una direccion</mat-error>
+                        }
+                    </mat-form-field>
+                </div>
+            </div>
+       </div>
+          
+    </form>
+</div>

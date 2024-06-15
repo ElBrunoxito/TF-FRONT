@@ -1,0 +1,19 @@
+<div class="login-container">
+  <div class="login-card">
+    <img src="assets/images/logo.png" alt="Ahorra+" class="logo">
+    <h2 style="color:white">AHORRA+</h2>
+    <form>
+      <div class="form-group">
+        <label for="email" style="color:white">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password" style="color:white">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+      <button [routerLink]="'../register'" type="button" class="btn btn-secondary">Registrarse aquí</button>
+    </form>
+    <a class="forgot-password" style="color:white">¿Has olvidado tu contraseña?</a>
+  </div>
+</div>

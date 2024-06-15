@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+
+.container{
+    width: 100%;
+    display: flex;
+    /*background-color: red;*/
+}
+
+.col-1{
+    margin-right: 100px;    
+}
+.col-2{
+    /*width: 25%;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*background: rgb(60, 255, 0);*/
+}
+
+
+.content-width{
+    /*width: 737px;*/
+    width: 737px;
+    border-radius: 40px;
+
+    span{
+        width: 39px;
+    }
+}
+
+
+
+.boxes{
+    display: flex;
+}
+
+.boxColor{
+    width: 349px;
+    height: 189px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 36.15px 44.49px;
+    border-radius: 40px;
+    h1,h2{
+        color: white;
+        font-weight: bold;
+    }
+    h2{
+        font-size: 32px;
+    }
+    h1{
+        font-size: 50px;
+    }
+}
+.disponible{
+
+    background-color: rgba(70, 214, 119, 0.72);
+
+}
+.total{
+    background-color: rgba(64, 184, 222, 0.73);
+}
+
+.balance{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    *{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    
+}
+
+
+.content-height{
+    height: 586px;
+}
+.content-colors{
+    background-color: rgba(242, 242, 242, 0.84);
+}
+
+.margin-top-44-84{
+    margin-top: 44.84px;
+}
+.margin-top-32-55{
+    margin-top: 32.55px;
+}
+
+.height-286{
+    height: 256px;
+}
+
+
+
+.notificaciones{
+    height: 189px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    *{
+        margin-left: 40px;
+    }
+    
+}
+
+.notificacion{
+    width: 70%;
+    display: flex;
+    
+    table{
+        background-color: rgba(242, 242, 242, 0.84);
+        box-shadow: none;
+    }
+     
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    *{
+        margin-left: 40px;
+
+        display: flex;
+        align-items: center ;
+    }
+}
+
+.actualizacion{
+    display: flex;
+    flex-direction: column;
+
+    *{
+        margin-left: 40px;
+        margin-top: 40px;
+
+    }
+}
+
+
+
+

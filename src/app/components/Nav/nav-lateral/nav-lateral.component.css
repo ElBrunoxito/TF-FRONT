@@ -1,0 +1,46 @@
+.sidenav-container {
+    height: 100vh;
+  }
+  
+  .sidenav {
+    width: 250px;
+    background-color: #66b2b2; /* Color de fondo del sidenav */
+    padding: 10px;
+  }
+  
+  .logo-container {
+    text-align: center;
+    margin-bottom: 10px;
+    
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  .sidenav mat-nav-list {
+    a {
+      display: block;
+      margin: 10px 0;
+      padding: 15px 10px;
+      background: #003366;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+  
+    a:hover {
+      background-color: #005599;
+    }
+  }
+
+  
+  .logout-button {
+    display: block;
+    margin: 20px auto 0;
+    width: 100%;
+    background-color: #003366;
+    color: white;
+  }

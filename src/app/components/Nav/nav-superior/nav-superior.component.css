@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #FAFAFA; /* Fondo gris claro */
+  }
+  
+  .balance {
+    display: flex;
+    align-items: center;
+  }
+  
+  .balance-amount {
+    padding: 5px 10px ;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: #e0e0e0; /* Fondo gris más oscuro */
+    font-weight: bold;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-info mat-icon {
+    margin-left: 10px;
+  }
+  
+  .user-info span {
+    margin-left: 10px;
+    font-weight: bold;
+  }
