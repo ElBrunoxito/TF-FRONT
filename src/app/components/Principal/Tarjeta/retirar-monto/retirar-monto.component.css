@@ -1,0 +1,81 @@
+
+.tarjeta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 85vh;
+    max-width: 80vw;
+    width: 100vw;
+    height: 100vh;
+    
+    background-size: cover;
+  }
+  
+  .tarjeta-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    
+    
+  }
+  .retirar {
+    margin-bottom: 25px;
+    text-align: left;
+  }
+  
+  
+  .form-group {
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center; 
+    align-items: center;
+   
+  }
+  
+  .form-group input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+     margin: 0 auto; 
+    display: block;
+  }
+  
+  .btn {
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn-secondary {
+    background-color: #069AC1;
+    color: #fff;
+  }
+ 
+.button-container {
+        display: flex;
+        justify-content: flex-start;
+    }
+.button-container button {
+        margin-right: 10px;
+    }
+.button-container button:last-child {
+        margin-right: 0;
+    }

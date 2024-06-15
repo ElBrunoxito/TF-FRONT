@@ -1,7 +1,10 @@
-
+body{
+    background-color: aqua;
+}
 .container{
     display: flex;
     justify-content: space-between;
+
 }
 
 .right{
@@ -9,15 +12,17 @@
     margin-left: 250px;
 
     
+
+    
 }
 app-nav-lateral{
     position: fixed;
+
 }
 .content{
-
     display: flex;
-    height: 0cap;
-    /*background-color: rgb(136, 10, 255);*/
+    /*height: ;*/
+    background-color: #E9E4E4;
     padding: 44.5px 37.96px;
 }
 

@@ -15,7 +15,7 @@
                     <h3>Nombres</h3>
                     <mat-form-field class="example-full-width">
                         <mat-label>Nombres</mat-label>
-                        <input type="text" matInput [formControl]="nombresFormControl" placeholder="Ex. Luis Spadaro">
+                        <input  type="text" matInput [formControl]="nombresFormControl" placeholder="Ex. Luis Spadaro">
                         @if (nombresFormControl.hasError('required')) {
                           <mat-error>Porfavor ingresa un nombre</mat-error>
                         }
@@ -27,7 +27,7 @@
                         <mat-label>DNI</mat-label>
                         <input type="number" matInput [formControl]="DNIFormControl" placeholder="Ex. 82593756">
                         @if (DNIFormControl.hasError('required') || DNIFormControl.errors?.['pattern']) {
-                          <mat-error>Porfavor ingresa un DNI VALIDO</mat-error>
+                          <mat-error>DNI no valido</mat-error>
                         }
                     </mat-form-field>
                 </div>
@@ -35,12 +35,17 @@
                     <h3>Direccion</h3>
                     <mat-form-field class="example-full-width">
                         <mat-label>Direccion</mat-label>
-                        <input type="text" matInput [formControl]="DireccionFormControl" placeholder="Ex. Luis Spadaro">
-                        @if (DireccionFormControl.hasError('required')) {
+                        <input type="text" matInput [formControl]="direccionFormControl" placeholder="Ex. Luis Spadaro">
+                        @if (direccionFormControl.hasError('required')) {
                           <mat-error>Porfavor ingresa una direccion</mat-error>
                         }
                     </mat-form-field>
                 </div>
+                <button (click)="clickTodosLosCampos()" mat-flat-button color="primary">
+                    <mat-icon>edit</mat-icon>
+                    Editar
+                </button>
+
 
             </div>
             <div class="col-1">
@@ -74,8 +79,15 @@
                         }
                     </mat-form-field>
                 </div>
+                <button  mat-flat-button color="primary">
+                    <mat-icon>save</mat-icon>
+                    Guardar
+                </button>
             </div>
+
        </div>
+
+
           
     </form>
 </div>

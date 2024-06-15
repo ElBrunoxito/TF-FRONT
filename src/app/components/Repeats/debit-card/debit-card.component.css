@@ -1,0 +1,55 @@
+.card {
+  width: 300px;
+  height: 180px;
+  background-color: #1a1a1a;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.card-logo {
+  width: 50px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.card-number {
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-name, .card-expiry, .card-cvv {
+  font-size: 0.9em;
+}
+.visa-card {
+  background-image: url('https://www.visa.com.pe/dam/VCOM/regional/lac/SPA/Default/Pay%20With%20Visa/Find%20a%20Card/Credit%20cards/Classic/visa_classic_card_400x225.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mastercard-card {
+  background-image: url('https://plusdin.com.br/box/uploads/2023/05/caixa-black.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.texts{
+  font-size: 1.4em;
+  font-weight: bold;
+}

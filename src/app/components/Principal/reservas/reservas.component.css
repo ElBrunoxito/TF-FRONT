@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 80vw;
+    max-height: 85vh;
+    width: 70vw;
+    height: 100vh;
+}
+
+.button-add{
+    width: 136px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-bottom: 1%;
+    background-color: #069AC1;
+
+}
+
+.button-icon{
+    border-radius: 50%;
+    background-color: white;
+    color: #069AC1;
+
+    
+}
+
+mat-paginator{
+    display: flex;
+    height: max-content;
+}
+.transacciones{
+    display: block;
+    margin-left: 32px;
+    max-width: 70vw;
+    width: 80vw;
+    
+    height: auto;
+    border-radius: 110px;
+    background-color: white;
+    padding: 25px 40px ;
+
+    table{
+        background-color: transparent;
+        margin-top: 10px;
+    }
+    
+}

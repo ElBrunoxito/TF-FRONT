@@ -1,0 +1,9 @@
+<div class="card" [ngClass]="{'visa-card': cardType === 'visa', 'mastercard-card': cardType === 'mastercard'}">
+
+  <div class="card-number texts">{{ cardNumber }}</div>
+  <div class="card-details">
+    <div class="card-name text">{{ name }}</div>
+    <div class="card-expiry text">{{ expiryDate }}</div>
+    <div class="card-cvv text">{{ maskedCVV }}</div>
+  </div>
+</div>

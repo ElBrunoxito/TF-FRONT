@@ -1,0 +1,96 @@
+.tarjeta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 100vh;
+    max-height: 90vh;
+    /*background-color: #f0f0f0;*/    
+    background-size: cover;
+  }
+  
+  .tarjeta-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width:500px;
+    width: 100%;
+    
+  }
+  .saldo {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #069AC1;
+    color: #fff;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+  }
+ 
+.button-container {
+        display: flex;
+        justify-content: flex-start;
+    }
+.button-container button {
+        margin-right: 10px;
+    }
+.button-container button:last-child {
+        margin-right: 0;
+    }
+ 
+    .tarjeta-card {
+        margin-bottom: 20px;
+    }
+    .form-row {
+        display: flex;
+        align-items: flex-start;
+    }
+    .form-row img {
+        margin-right: 20px;
+    }
+    .form-group {
+        margin-right: 15px;
+    }
+    .button-container {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+    .button-container button {
+        margin-right: 10px;
+    }
+   

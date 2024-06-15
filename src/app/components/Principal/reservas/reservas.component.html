@@ -1,0 +1,65 @@
+<div class="container">
+  <button [routerLink]="''" mat-flat-button color="primary" class="button-add">
+    Agregar
+    <mat-icon aria-label="Add" class="button-icon">add</mat-icon>
+
+  </button>
+  <div class="transacciones">
+
+    <table mat-table [dataSource]="dataSource">
+      <!--          
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> Id </th>
+        <td mat-cell *matCellDef="let elemento"> {{elemento.id}} </td>
+      </ng-container>
+      -->
+      <ng-container matColumnDef="reserva">
+        <th mat-header-cell *matHeaderCellDef> Reserva </th>
+        <td mat-cell *matCellDef="let element"> {{element.reserva}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="fecha">
+        <th mat-header-cell *matHeaderCellDef> Fecha </th>
+        <td mat-cell *matCellDef="let element">
+          {{element.fecha.getDate()}}/{{element.fecha.getMonth()}}/{{element.fecha.getFullYear()}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="hora">
+        <th mat-header-cell *matHeaderCellDef> Hora </th>
+        <td mat-cell *matCellDef="let element"> {{element.fecha.getHours()}} : {{element.fecha.getMinutes()}}</td>
+      </ng-container>
+      <ng-container matColumnDef="monto">
+        <th mat-header-cell *matHeaderCellDef> Monto total S/. </th>
+        <td mat-cell *matCellDef="let element"> S/. {{element.monto.toString()}} </td>
+      </ng-container>
+      <ng-container matColumnDef="tipo">
+        <th mat-header-cell *matHeaderCellDef> Tipo </th>
+        <td mat-cell *matCellDef="let element"> {{element.tipoReserva.toString()}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="interaccion">
+        <th mat-header-cell *matHeaderCellDef>Interaccion</th>
+        <td mat-cell *matCellDef="let element; let i = index;">
+          <button mat-icon-button color="primary" (click)="edit(element.id)">
+            <mat-icon aria-label="Edit">edit</mat-icon>
+          </button>
+
+
+          <button mat-icon-button color="primary" (click)="add(element.id)">
+            <mat-icon aria-label="Add">add</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+
+
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <mat-paginator [length]="dataSource.data.length" [pageSize]="5" [pageSizeOptions]="[5, 10, 25, 100]"
+      aria-label="Select page">
+    </mat-paginator>
+  </div>
+</div>
