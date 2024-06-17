@@ -1,13 +1,13 @@
 .card {
   width: 300px;
   height: 180px;
-  background-color: #1a1a1a;
   color: white;
   border-radius: 10px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: start;
   position: relative;
 }
 
@@ -19,6 +19,7 @@
 }
 
 .card-number {
+  margin-top: 10px;
   font-size: 1.2em;
   letter-spacing: 2px;
 }
@@ -32,17 +33,24 @@
 .card-name, .card-expiry, .card-cvv {
   font-size: 0.9em;
 }
-.visa-card {
-  background-image: url('https://www.visa.com.pe/dam/VCOM/regional/lac/SPA/Default/Pay%20With%20Visa/Find%20a%20Card/Credit%20cards/Classic/visa_classic_card_400x225.jpg');
+.back{
   background-size: cover;
   background-repeat: no-repeat;
+}
+.visa-card {
+  background-image: url('https://i.pinimg.com/564x/23/86/75/238675f6d4a3ab1dfd03d2d8dea1e01e.jpg');  
 }
 
 .mastercard-card {
   background-image: url('https://plusdin.com.br/box/uploads/2023/05/caixa-black.png');
-  background-size: cover;
-  background-repeat: no-repeat;
 }
+.discover-card{
+  background-image: url('https://creditkarma-cms.imgix.net/wp-content/uploads/2023/08/CCDiscover06.png?w=700&auto=compress');  
+}
+.unknown-card{
+  background-image: url('https://i.pinimg.com/564x/c9/31/28/c93128f549b620f2b1afe934b0df574a.jpg');
+}
+
 
 .text{
   font-size: 1.2em;

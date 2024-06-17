@@ -4,7 +4,7 @@
   
   .sidenav {
     width: 250px;
-    background-color: #66b2b2; /* Color de fondo del sidenav */
+    background-color: rgba(61, 156, 177, 0.89); /* Color de fondo del sidenav */
     padding: 10px;
   }
   

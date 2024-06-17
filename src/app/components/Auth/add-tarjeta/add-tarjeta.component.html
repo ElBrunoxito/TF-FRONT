@@ -3,24 +3,37 @@
 
 <div class="card-info-container">
     <div class="card-info-card">
-      <img src="assets/images/tarjeta.webp" alt="Credit Card" class="credit-card-img">
+      <!--
+        <img src="assets/images/tarjeta.webp" alt="Credit Card" class="credit-card-img">
+      -->
+      <app-debit-card
+      [name]="nombre" 
+      [cardNumber]="number"
+      [cvv]="cvv"
+      [expiryDate]='fechaExpiracion'
+
+
+      ></app-debit-card>
+
+
+
       <form>
         <div class="form-group">
           <label for="cardNumber">Numero de tarjeta:</label>
-          <input type="text" id="cardNumber" name="cardNumber" required>
+          <input type="text" id="cardNumber" name="cardNumber" [(ngModel)]="number" required>
         </div>
         <div class="form-group">
           <label for="name">Nombre:</label>
-          <input type="text" id="name" name="name" required>
+          <input type="text" id="name" name="name" [(ngModel)]="nombre" required>
         </div>
         <div class="form-group expiration-cvv">
           <div>
             <label for="expirationDate">Fecha de expiración:</label>
-            <input type="date" id="expirationDate" name="expirationDate" required>
+            <input type="date" id="expirationDate" name="expirationDate" [(ngModel)]="fechaExpiracion" required>
           </div>
           <div>
             <label for="cvv">CVV:</label>
-            <input type="text" id="cvv" name="cvv" required>
+            <input type="text" id="cvv" name="cvv" [(ngModel)]="cvv" required>
           </div>
         </div>
         <button type="button" class="btn btn-secondary">Omitir</button>

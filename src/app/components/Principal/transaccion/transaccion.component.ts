@@ -28,7 +28,7 @@ import { RouterLink } from '@angular/router';
 })
 export class TransaccionComponent implements OnInit{
   name: string = '';
-  expiryDate: string = '';
+  expiryDate: Date = new Date();
   cardNumber: string = '';
   cvv: string = '';
 
@@ -52,7 +52,7 @@ export class TransaccionComponent implements OnInit{
     //Lista de tarjetas
     //ngfor
     this.name = 'El nombre';
-    this.expiryDate = '13/25';
+    this.expiryDate = new Date();
     this.cardNumber = '4434 5678 9012 3456';
     this.cvv= '124';  
 

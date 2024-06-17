@@ -4,7 +4,7 @@ import { PaginaPrincipalComponent } from './components/Principal/pagina-principa
 export const routes: Routes = [
     //{path:''},
     {
-        path:'',redirectTo:'/principal',pathMatch:'full'
+        path:'',redirectTo:'auth',pathMatch:'full'
     }
     ,
     { 
