@@ -13,7 +13,7 @@ export const AUTH_ROUTES:Routes=[
     {path:'login',component:LoginComponent,},
     {path:'register',component:RegisterComponent},
     {path:'recuperar',component:RecuperarComponent},
-    {path:'addtarjeta/:id',component:AddTarjetaComponent}
+    {path:'addtarjeta',component:AddTarjetaComponent}
 
 
     

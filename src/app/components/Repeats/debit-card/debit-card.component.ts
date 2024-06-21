@@ -25,7 +25,8 @@ export class DebitCardComponent implements OnChanges {
     if (changes['cvv']) {
       const cvvValue = changes['cvv'].currentValue;
       //this.maskedCVV = this.cvv.replace(/\d/g, (digit, index) => (index < this.cvv.length - 1 ? '*' : digit));
-      this.maskedCVV = cvvValue.replace(/\d/g, (digit: string, index: number) => (index < cvvValue.length - 1 ? '*' : digit));
+      //this.maskedCVV = cvvValue.replace(/\d/g, (digit: string, index: number) => (index < cvvValue.length - 1 ? '*' : digit));
+      this.maskedCVV = cvvValue
 
     }
     if (changes['expiryDate']) {
@@ -80,6 +81,6 @@ export class DebitCardComponent implements OnChanges {
     } else {
       this.cardType = 'unknown'; // Tipo de tarjeta desconocido
     }
-    console.log(this.cardType)
+    //console.log(this.cardType)
   }
 }

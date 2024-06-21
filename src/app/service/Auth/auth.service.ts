@@ -5,19 +5,19 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService{
 
-  private readonly TOKEN_KEY = 'authToken';
+  private readonly TOKEN_KEY = 'token';
 
   constructor() { }
 
-  guardarToken(token: string): void {
+  setToken(token: string): void {
     localStorage.setItem(this.TOKEN_KEY, token);
   }
 
-  obtenerToken(): string | null {
+  getToken(): string | null {
     return localStorage.getItem(this.TOKEN_KEY);
   }
 
-  eliminarToken(): void {
+  dropToken(): void {
     localStorage.removeItem(this.TOKEN_KEY);
   }
 }

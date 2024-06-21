@@ -7,36 +7,36 @@
         <img src="assets/images/tarjeta.webp" alt="Credit Card" class="credit-card-img">
       -->
       <app-debit-card
-      [name]="nombre" 
-      [cardNumber]="number"
-      [cvv]="cvv"
-      [expiryDate]='fechaExpiracion'
+      [name]="addCardGroup.value['nombre']"
+      [cardNumber]="addCardGroup.value['numberCard']"
+      [cvv]="addCardGroup.value['cvv']"
+      [expiryDate]="addCardGroup.value['expirationDate']"
 
 
       ></app-debit-card>
 
 
 
-      <form>
+      <form [formGroup]="addCardGroup">
         <div class="form-group">
           <label for="cardNumber">Numero de tarjeta:</label>
-          <input type="text" id="cardNumber" name="cardNumber" [(ngModel)]="number" required>
+          <input type="text" id="cardNumber" name="cardNumber" formControlName="numberCard" required>
         </div>
         <div class="form-group">
           <label for="name">Nombre:</label>
-          <input type="text" id="name" name="name" [(ngModel)]="nombre" required>
+          <input type="text" id="name" name="name"  formControlName="nombre" required>
         </div>
         <div class="form-group expiration-cvv">
           <div>
             <label for="expirationDate">Fecha de expiración:</label>
-            <input type="date" id="expirationDate" name="expirationDate" [(ngModel)]="fechaExpiracion" required>
+            <input type="date" id="expirationDate" name="expirationDate" formControlName="expirationDate" required>
           </div>
           <div>
             <label for="cvv">CVV:</label>
-            <input type="text" id="cvv" name="cvv" [(ngModel)]="cvv" required>
+            <input type="text" id="cvv" name="cvv" formControlName="cvv" required>
           </div>
         </div>
-        <button type="button" class="btn btn-secondary">Omitir</button>
+        <button type="button" (click)="addTarjeta()" class="btn btn-secondary">Omitir</button>
         <button type="submit" class="btn btn-primary">Guardar</button>
       </form>
     </div>

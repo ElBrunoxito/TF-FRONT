@@ -23,6 +23,7 @@ export class InicioComponent implements OnInit{
     //Recupera datos de service Backend y inicializa las variables
 
     this.getDatos();
+    console.log(localStorage.getItem('token'));
     
   }
 
