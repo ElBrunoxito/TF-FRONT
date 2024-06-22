@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
-    display:  flex;
+.container {
+    display: flex;
     flex-direction: column;
     max-width: 83vw;
     max-height: 85vh;
@@ -13,12 +13,12 @@
     width: 100vw;
 }
 
-.imagen{
+.imagen {
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
-    width: 100%; /* Tamaño dinámico */
-    height: 300px; /* Altura ajustable según necesites */
+    width: 100%;
+    height: 300px;
     background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%), url('/assets/images/back.jfif');
     background-size: contain;
     background-repeat: no-repeat;
@@ -26,17 +26,18 @@
     justify-content: start;
     align-items: center;
     margin-bottom: 20px;
-    h1{
-        margin-left: 5%;
-        font-size: 64px;
-    }
 }
 
-form{
+.imagen h1 {
+    margin-left: 5%;
+    font-size: 64px;
+}
+
+form {
     display: flex;
 }
 
-form > mat-grid-list{
+form > mat-grid-list {
     width: 1000px;
     height: min-content;
 }
@@ -47,38 +48,108 @@ form > mat-grid-list{
     flex-direction: column;
     align-items: center;
     padding: 35px;
-    h2{
-        margin-top: 40px;
-        text-align: center;
-        font-size: 32px;
-    }
 }
-  .example-card> img{
+
+.example-card h2 {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.example-card > img {
     border-radius: 100%;
     height: 300px;
     width: 300px;
     background-size: cover;
+}
 
-
-  }
-
-
-  .data{
+.data {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-  }
+}
 
-  .col-1{
+.col-1 {
     display: flex;
     flex-direction: column;
-    .inputs{
-        height: 100px;
-    }
-  }
+}
 
+.inputs {
+    height: 100px;
+}
 
-.button{
+.button {
     margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 100vw;
+        max-height: 100vh;
+        padding: 10px;
+    }
+
+    .imagen h1 {
+        font-size: 48px;
+    }
+
+    .example-card {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .example-card > img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .data {
+        flex-direction: column;
+    }
+
+    .col-1 {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 5px;
+    }
+
+    .imagen h1 {
+        font-size: 32px;
+        margin-left: 2%;
+    }
+
+    .example-card > img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .example-card h2 {
+        font-size: 24px;
+    }
+
+    .data {
+        width: 100%;
+    }
+
+    .col-1 {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .inputs {
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .button {
+        width: 100%;
+        padding: 10px;
+    }
 }

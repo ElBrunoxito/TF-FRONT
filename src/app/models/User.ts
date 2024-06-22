@@ -1,4 +1,4 @@
-export interface User{
+export interface UserRegister{
     id:number
     name:String
     lastName:String
@@ -14,4 +14,17 @@ export interface User{
 export interface UserLogin{
     username:String
     password:String
+}
+
+export interface User{
+    id:number
+    name:String
+    lastName:String
+    dni:String
+    email:String
+    username:String
+    registerDate:Date
+    address:String
+    phone:String
+    balance:number
 }

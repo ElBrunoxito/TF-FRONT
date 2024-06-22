@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MatTableModule} from '@angular/material/table';
+import { DebitCardService } from '../../../service/User/debit-card.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 
 @Component({
@@ -19,15 +21,32 @@ export class InicioComponent implements OnInit{
   public cardInfo:String = "**** **** **** " + ("1234567812347203").substring(12,16)
   public actualizacionInfo :String = "Pago de tarjeta subsanado";
 
+  constructor(
+    private debitCardService:DebitCardService,
+    private snackBar:MatSnackBar
+  ){
+
+  }
+
   ngOnInit(): void {
     //Recupera datos de service Backend y inicializa las variables
 
     this.getDatos();
-    console.log(localStorage.getItem('token'));
     
   }
 
   getDatos(){
+    this.debitCardService.getDebitCard().subscribe(
+      data =>{
+        var cardNumber = data.numberCard;
+        this.cardInfo = "**** **** **** "+ cardNumber.substring(12,16)
+      },
+      error=>{
+        this.snackBar.open('Error al cargar los datos de tarjeta', '', {
+          duration: 3000
+        });
+      }
+    );
 
   }
 

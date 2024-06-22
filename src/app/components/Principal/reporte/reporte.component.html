@@ -1,3 +1,43 @@
-<div class="content">
-    
-</div>
+<!--<div class="balance-container">
+    <div class="balance-header">
+      <input type="date" placeholder="Desde">
+      <input type="date" placeholder="Hasta">
+    </div>
+    <div class="balance-details">
+      <div class="balance-column">
+        <h3>Ahorros</h3>
+        <ul>
+          <li *ngFor="let saving of savings">
+            <span>{{ saving.type }}</span>
+            <span>{{ saving.date }}</span>
+            <span>S/{{ saving.amount }}</span>
+          </li>
+        </ul>
+        <div class="balance-total">Total: S/{{ savings.reduce((acc, saving) => acc + saving.amount, 0) }}</div>
+      </div>
+      <div class="balance-column">
+        <h3>Gastos</h3>
+        <ul>
+          <li *ngFor="let expense of expenses">
+            <span>{{ expense.type }}</span>
+            <span>{{ expense.date }}</span>
+            <span>S/{{ expense.amount }}</span>
+          </li>
+        </ul>
+        <div class="balance-total">Total: S/{{ expenses.reduce((acc, expense) => acc + expense.amount, 0) }}</div>
+      </div>
+    </div>
+    <div class="balance-footer">
+      <span>Disponible</span>
+      <span>S/{{ savings.reduce((acc, saving) => acc + saving.amount, 0) - expenses.reduce((acc, expense) => acc + expense.amount, 0) }}</span>
+    </div>
+  
+    <div>
+      <apx-chart
+        [series]="chartOptions.series"
+        [chart]="chartOptions.chart"
+        [xaxis]="chartOptions.xaxis"
+        [title]="chartOptions.title"
+      ></apx-chart>
+    </div>
+  </div>--->

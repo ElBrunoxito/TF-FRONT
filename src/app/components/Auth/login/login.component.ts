@@ -47,8 +47,7 @@ export class LoginComponent implements OnInit{
         response=>{
           if(response.user && response.token){
 
-            //localStorage.setItem('token',response.token)
-            //console.log(response.token)
+            this.authService.setId(response.user.id)
             this.authService.setToken(response.token);
 
             this.snackBar.open('Logeado correctamente', '', {

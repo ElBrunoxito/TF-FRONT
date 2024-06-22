@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.balance-container {
+    background-color: #fff;
+    padding: 210px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 1000px;
+    margin-left: 150px;
+    width: 945px;
+}
+
+.balance-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.balance-header input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.balance-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.balance-details {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.balance-column {
+    width: 45%;
+}
+
+.balance-column h3 {
+    margin-bottom: 10px;
+}
+
+.balance-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.balance-column li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.balance-total {
+    font-weight: bold;
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.balance-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+#chart {
+    max-width: 45%;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .balance-container {
+        padding: 100px;
+        margin-left: 0;
+        width: auto;
+    }
+
+    .balance-main {
+        flex-direction: column;
+    }
+
+    .balance-details {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .balance-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #chart {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .balance-container {
+        padding: 50px;
+    }
+
+    .balance-header input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .balance-footer {
+        flex-direction: column;
+        align-items: center;
+        font-size: 18px;
+    }
+}

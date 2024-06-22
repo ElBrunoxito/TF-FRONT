@@ -1,76 +1,80 @@
-
-
 .login-container {
-    display: flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  background-size: cover;
+  background-image: url('/assets/images/fondo_loggin.webp'); 
+  padding: 20px;
+}
+
+.login-card {
+ 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  margin-left: 20px; /* Add margin to separate from the left edge */
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #069AC1;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #069AC1;
+  color: #fff;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 20px;
+  color: #069AC1;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .login-container {
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    background-size: cover;
-    background-image: url('/assets/images/fondo_loggin.webp'); }
-  
-  
+  }
+
   .login-card {
-  /*  background-color: #ffffff;*/
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 400px;
-    width: 100%;
-    margin-right: 1380px;
-    img{
-      border-radius: 15px;
-    }
+    margin-left: 0;
   }
-  
-  .logo {
-    width: 100px;
-    margin-bottom: 20px;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-    text-align: left;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    margin-left: 140px;
-  }
-  
-  .form-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .btn {
-    width: 52%;
-    padding: 10px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-  }
-  
-  .btn-primary {
-    background-color: #069AC1;
-    color: #fff;
-  }
-  
-  .btn-secondary {
-    background-color: #069AC1;
-    color: #fff;
-  }
-  
-  .forgot-password {
-    display: block;
-    margin-top: 20px;
-    color: #069AC1;
-    text-decoration: none;
-  }
-  
-  
+}

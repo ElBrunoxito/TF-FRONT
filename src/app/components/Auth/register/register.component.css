@@ -4,7 +4,8 @@
   align-items: center;
   height: 100vh;
   background-size: cover;
-  background-image: url('/assets/images/fondo_registrar.webp'); /* Adjust path as necessary */
+  background-image: url('/assets/images/fondo_registrar.webp'); /* Ajustar la ruta según sea necesario */
+  padding: 20px; /* Agregar padding para espacios más pequeños */
 }
 
 .register-card {
@@ -15,12 +16,14 @@
   max-width: 400px;
   width: 100%;
   /* background: rgba(255, 255, 255, 0.8); Semi-transparent background */
-  margin-left: 900px;
+  margin-left: auto; /* Alinear a la derecha */
+  margin-right: 50px; /* Espacio a la derecha */
 }
 
 .register-card h2 {
   color: #333;
   margin-bottom: 20px;
+  padding-right: 1000px;
 }
 
 .form-group {
@@ -35,18 +38,18 @@
 }
 
 .form-group input, .form-group select {
-  width: 100%;
+  width: 62%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 .btn {
-  width: 52%;
+  width: 100%;
   padding: 10px;
   margin-top: 10px;
   border: none;
-  border-radius: 50px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -61,3 +64,36 @@
   margin-top: 10px;
 }
 
+/* Media query para pantallas más grandes */
+@media (min-width: 1024px) {
+  .register-card {
+    max-width: 500px;
+  }
+
+  .btn {
+    width: 48%;
+  }
+
+  .btn-secondary {
+    margin-right: 4%;
+  }
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .register-card {
+    margin-left: 0; /* Remover alineación a la derecha */
+    margin-right: 0; /* Remover espacio a la derecha */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 15px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .btn-secondary {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
