@@ -38,7 +38,8 @@ export class AddTarjetaComponent {
     private fb:FormBuilder,
     private debitCardService:DebitCardService,
     private snackBar:MatSnackBar,
-    private router:Router
+    private router:Router,
+    private authService:AuthService
   ){
     this.addCardGroup = this.fb.group({
       numberCard: ['', Validators.required],
@@ -68,7 +69,7 @@ export class AddTarjetaComponent {
       };*/
       
       debitCard.bankId = 1;
-      debitCard.userId = 7;
+      debitCard.userId = Number(this.authService.getId())
       debitCard.password = "3134"
       debitCard.cvv = this.addCardGroup.value['cvv']
       //debitCard.cvv = 123;
