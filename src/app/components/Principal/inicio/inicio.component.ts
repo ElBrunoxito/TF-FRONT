@@ -39,6 +39,7 @@ export class InicioComponent implements OnInit{
     this.debitCardService.getDebitCard().subscribe(
       data =>{
         var cardNumber = data.numberCard;
+        console.log(cardNumber);
         this.cardInfo = "**** **** **** "+ cardNumber.substring(12,16)
       },
       error=>{

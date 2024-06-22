@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from '../../configP/provide.prod';
 import { AuthService } from './auth.service';
-import { User } from '../../models/User';
+import { User, UserRegister } from '../../models/User';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +12,7 @@ export class UserService {
 
   constructor(private http:HttpClient,private authService:AuthService) { }
 
-  register(data:any):Observable<any>{ 
+  register(data:UserRegister):Observable<any>{ 
     const endpoint = `${environment.apiUrl}/authenticate/register`;
     return this.http.post<any>(endpoint,data);
   }
