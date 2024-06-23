@@ -1,14 +1,14 @@
 .card {
-  width: 300px;
-  height: 180px;
-  color: white;
-  border-radius: 10px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: start;
-  position: relative;
+   width: 300px;
+   height: 180px;
+   color: white;
+   border-radius: 10px;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: start;
+   position: relative;
 }
 
 .card-logo {
